@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="general.css" />
+    <title>Login</title>
+  </head>
+  <style>
+    .gym-heading, .gym-heading2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      
+      color: #333;
+    }
+    .login-content {
+      background-color: rgba(247, 242, 242, 0.89);
+      padding: 3.2rem;
+      border-radius: 8px;
+    }
+    .user-admin {
+      display: flex;
+      column-gap: 8.2rem;
+      justify-content: space-between;
+      /*margin-bottom: 50px;*/
+    }
+    .gym-heading2:last-child{
+      background-color: #aaa;
+      padding: 1.2rem 2.4rem;
+      border-radius: 9px;
+      color: #fff;
+      font-size: 20px;
+    }
+    .gym-heading2:hover {
+      background-color: #fdf2e9;
+      color: #333;
+    }
+    .login-signpage {
+      font-size: 1.8rem;
+      margin-bottom: 4.2rem;
+    }
+    .gym-form {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 1.5rem;
+      row-gap: 2.4rem;
+      border: 50px;
+    }
+    .gym-form label {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+    }
+    .gym-form input,
+    .gym-select {
+      width: 70%;
+      padding: 1.2rem;
+      font-size: 1.8rem;
+      font-family: inherit;
+      color: inherit;
+      border: none;
+      background-color: #fdf2e9;
+      border-radius: 9px;
+      /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);*/
+      box-shadow: 0px 10px 20px 0px grey;
+    }
+    .gym-form input::placeholder {
+      color: #aaa;
+    }
+    .btn--form {
+      background-color: rgb(190, 186, 186);
+      color: #333;
+      align-self: center;
+      align-items: center;
+      border-radius: 9px;
+      padding: 1rem 3rem;
+      letter-spacing: 2px;
+      margin-top: 40px;
+    }
+    .btn--form:hover {
+      background-color: #fdf2e9;
+      color: #333;
+    }
+    .section-gym {
+      background-color: rgb(238, 232, 232);
+      padding: 9.6rem;
+    }
+    .gym {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1.4rem;
+    }
+    .gym-login {
+      width: 600px;
+      height: 700px;
+      border-radius: 30px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0px 20px 30px 0px grey;
+    }
+    .login-heading {
+      font-size: 60px;
+      font-style: italic;
+      color: #333;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    /*@media only screen and (max-width: 600px) {
+      section {
+        background-color: lightgrey;
+      }
+    }*/
+    .btn {
+      display: flex;
+      column-gap: 2.2rem;
+      justify-content: baseline;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <img class="logo" alt="GYM" src="img/logo.jpg" />
+      <nav class="main-nav">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">Packages</a>
+        <a class="nav-link" href="#">Gallary</a>
+        <a class="nav-link" href="login.html">Login</a>
+        <a class="nav-link nav" href="#">Contact Me</a>
+      </nav>
+    </header>
+    <main>
+      <section class="section-gym">
+        <h1 class="login-heading">Get your Start Journey.....</h1>
+        
+        <div class="container gym">
+          <div class="login-content">
+            <div class="user-admin">
+              <h1 class="gym-heading">User LOGIN</h1></h1>
+              <a class="gym-heading2" href=" admin.html">Admin Login</a>
+            </div>
+            <p class="login-signpage">does'nt have account yet?...<a href="sign up">Sign up</a></p>
+            <form class="gym-form">
+              <div>
+                <label><strong>User name:</strong></label>
+                <input type="text" name="Username" />
+              </div>
+              <div>
+                <label><strong>Password:</strong></label>
+                <input type="password" name="Password" /><br /><br />
+              </div>
+            </form>
+            <div class="btn">
+              <button class="btn--form"><strong>Login</strong></button>
+              <button class="btn--form"><strong>Sign up</strong></button>
+            </div>
+          </div>
+          <div>
+            <img class="gym-login" alt="gym-photo" src="img/gym4.jpg" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
