@@ -1,0 +1,250 @@
+/* HEADER */
+/*.header {
+  display: flex;
+  column-gap: 4.2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  /* BECAUSE WE WANT HEADER TO BE STICKY LATER*/
+/* height: 9.6rem;
+  padding: 0 4.8rem;
+}*/
+
+header {
+  /*background-color: red;*/
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(img/cat13.avif);
+  background-size: cover;
+}
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding-top: 32px;
+  text-decoration: none;
+}
+
+.heading-primary {
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+.main-link {
+  text-decoration: none;
+  display: flex;
+  gap: 3.2rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+nav-link:link,
+.nav-link:visited {
+  /*color: #333;*/
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #cf711f;
+  /* trck to border box side*/
+}
+.menu-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #fff;
+}
+
+li a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+li a:hover,
+dropdown:hover {
+  background-color: orange;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+.header-container {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /*in relative to element size*/
+  transform: translate(-50%, -50%);
+  /*background-color: violet;*/
+  color: #fff;
+}
+.header-container-inner {
+  width: 50%;
+  /*background-color: blue;*/
+}
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+p {
+  font-size: 20px;
+  margin-bottom: 48px;
+  line-height: 1.6;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #dda87a;
+  font-size: 2rem;
+  color: #fff;
+  padding: 1.6rem 2.2rem;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  /*put a transition on original"state"*/
+  transition: background-color 0.3s;
+  /*transition: all  0.3s;*/
+}
+.btn:hover {
+  background-color: #fdf2e9;
+  color: #333;
+}
+/* section-hero */
+.section-hero {
+  /*background-color: #fdf2e9;*/
+  /*padding: 4.8rem 0 9.6rem 0;*/
+  padding: 9.6rem;
+}
+.heading-1 {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-family: cursive;
+}
+.heading-2 {
+  text-align: center;
+  margin-bottom: 5.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.event-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-rows: 1fr;*/
+  column-gap: 1.2rem;
+
+  text-align: center;
+}
+.event-cor {
+  text-align: center;
+  width: 50%;
+}
+.event-imgs {
+  width: 80%;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+  transition: all 0.4s;
+  overflow: hidden;
+  border-radius: 11px;
+}
+.main-description {
+  text-align: center;
+  border-style: calc(20);
+  margin-bottom: 4.8rem;
+}
+.event-list {
+  display: flex;
+  gap: 2.6rem;
+  font-size: 1.4rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  margin-left: 7.2rem;
+
+  list-style: square;
+}
+.event-point {
+  margin-bottom: 28px;
+}
+
+/* section-event(special,social,corporate event)*/
+
+.section-event {
+  background-color: #fdf2e9;
+  /*padding: 4.8rem 0 9.6rem 0;*/
+  padding: 9.6rem;
+}
+.div-event {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.4rem;
+}
+.event-description {
+  text-align: center;
+  /*border-style: double;*/
+  margin-bottom: 4.8rem;
+}
+.event-img {
+  width: 100%;
+
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0.075, 0.075);
+  transition: all 0.4s;
+}
+.more {
+  color: black;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.more:hover {
+  text-decoration: none;
+}
+/* SECTION SOCIAL EVENT*/
+.social-description {
+  margin-bottom: 4.8rem;
+  text-align: center;
+  justify-content: center;
+}
+.footer {
+  padding: 9.6rem, 0;
+  margin-top: 2rem;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.address {
+  margin-bottom: 1rem;
+}
+.footer-list {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+.footer-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
